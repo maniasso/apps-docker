@@ -107,8 +107,8 @@ RUN chmod +x /var/www/localhost/cgi-bin/tz.pl
 # ADD http://downloads.sourceforge.net/project/stor2rrd/stor2rrd/$STOR_SF_DIR/stor2rrd-$STOR_VER.tar /home/stor2rrd/
 
 # download tarballs from official website
-ADD https://lpar2rrd.com/download-static/lpar2rrd/lpar2rrd-$LPAR_VER.tar /home/lpar2rrd/
-ADD https://stor2rrd.com/download-static/stor2rrd/stor2rrd-$STOR_VER.tar /home/stor2rrd/
+ADD https://sourceforge.net/projects/lpar2rrd/files/lpar2rrd/7.40/lpar2rrd-7.40.tar /home/lpar2rrd/
+ADD https://sourceforge.net/projects/stor2rrd/files/stor2rrd/7.40/stor2rrd-7.40.tar /home/stor2rrd/
 
 # extract tarballs
 WORKDIR /home/lpar2rrd

@@ -112,10 +112,10 @@ ADD https://sourceforge.net/projects/stor2rrd/files/stor2rrd/7.40/stor2rrd-7.40.
 
 # extract tarballs
 WORKDIR /home/lpar2rrd
-RUN tar xvf lpar2rrd-$LPAR_VER.tar
+RUN tar xvf lpar2rrd-7.40.tar
 
 WORKDIR /home/stor2rrd
-RUN tar xvf stor2rrd-$STOR_VER.tar
+RUN tar xvf stor2rrd-7.40.tar
 
 COPY supervisord.conf /etc/
 COPY startup.sh /startup.sh

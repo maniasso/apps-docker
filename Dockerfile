@@ -3,7 +3,7 @@
 # VERSION               1.0
 
 FROM       alpine:latest
-MAINTAINER jirka@dutka.net
+MAINTAINER maniasso@gmail.com
 
 ENV HOSTNAME XoruX
 ENV VI_IMAGE 1
@@ -95,9 +95,6 @@ RUN chmod 640 /var/spool/cron/crontabs/lpar2rrd && chown lpar2rrd.cron /var/spoo
 COPY tz.pl /var/www/localhost/cgi-bin/tz.pl
 RUN chmod +x /var/www/localhost/cgi-bin/tz.pl
 
-# download tarballs from SF
-# ADD http://downloads.sourceforge.net/project/lpar2rrd/lpar2rrd/$LPAR_SF_DIR/lpar2rrd-$LPAR_VER.tar /home/lpar2rrd/
-# ADD http://downloads.sourceforge.net/project/stor2rrd/stor2rrd/$STOR_SF_DIR/stor2rrd-$STOR_VER.tar /home/stor2rrd/
 
 # download tarballs from official website
 ADD https://www.lpar2rrd.com/download-static/lpar2rrd/lpar2rrd-$LPAR_VER.tar /home/lpar2rrd/
